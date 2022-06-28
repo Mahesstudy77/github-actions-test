@@ -4,10 +4,10 @@ jobs:
   run-shell-command:
     runs-on: linux
     steps: 
-      -name: echo a string
-      run: echo "test yaml"
-      - name: multi line script
-      run: | 
-        node -v
-        npm -v
+      - name: echo a string
+        run: echo "test yaml"
+      - name: multiline script
+        run: |  
+          node -v
+          npm -v
         
