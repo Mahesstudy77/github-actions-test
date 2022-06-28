@@ -1,0 +1,13 @@
+name: shell commands
+on: [push]
+jobs:
+  run-shell-command:
+    runs-on: linux
+    steps: 
+      -name: echo a string
+      run: echo "test yaml"
+      - name: multi line script
+      run: | 
+        node -v
+        npm -v
+        
