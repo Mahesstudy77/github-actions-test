@@ -1,0 +1,10 @@
+name: actions workflw
+on: [push]
+  Jobs:
+    run-github-actions:
+      runs-on: ubuntu-latest
+
+    stpes:
+      - name: checkout
+        uses: actions/checkout@v1
+
